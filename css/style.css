@@ -1,0 +1,31 @@
+/**{
+  font-family: 'Baloo Bhaijaan 2', cursive !important;
+}*/
+html body div.jumbotron.jumbotron-fluid.jumbotron-expand-md.text-center div.container.py-5.mt-5 h1.display-10.text-danger.p-5 b{
+  color:rgb(247, 118, 252);
+  border:1px solid #18181a;
+  font-family: 'Baloo Bhaijaan 2', cursive !important;
+}
+html body div.jumbotron.jumbotron-fluid.jumbotron-expand-md.text-center{
+
+  background-size:contain;
+}
+
+html body div.jumbotron.jumbotron-fluid.jumbotron-expand-md.text-center div.container.py-5.mt-5 button.btn.bg-danger.text-white.mx-2.my-1.bg-danger{
+  background-color: rgb(255, 13, 5)!important;
+  height:50px;
+  width:50%;
+}
+html body div.jumbotron.jumbotron-fluid.jumbotron-expand-md.text-center div.container.py-5.mt-5 button.btn.bg-danger.text-white.mx-2.my-1.bg-danger:hover{
+background-color: rgb(100, 194, 189)!important;
+color: red!important;
+font-weight: bold;
+}
+col-md-4 blog-sidebar shubu text-light{
+color: #18181a!important;
+text-decoration: none!important;
+}
+html body div.container.text-white main.container div.row aside.col-md-4.blog-sidebar.shubu.text-white div.p-4.mb-3.bg-light.rounded{
+  color:#18181a;
+  
+}

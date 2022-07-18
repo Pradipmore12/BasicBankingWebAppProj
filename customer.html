@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+  <title>Sparks Foundation Banking system !</title>
+  <!-- Custom styles for this template -->
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body class="text-white" style="z-index:-1;background-image: url('./images/1.jpg');background-size: cover; opacity: 0.9;">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sparks Banking System
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item ">
+              <a class="nav-link" id="home" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#">Customer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://internship.thesparksfoundation.info">features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+            </li>
+          </ul>
+           <div class="d-flex">
+        <button class="btn btn-outline-danger me-2" data-toggle="modal" data-target="#sendMoney">Send Money</button>
+ 
+      </div>
+ 
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+</header>  
+
+
+<section id="main" class="coloured-section" style=" padding:  50px 10%;" >
+    <br>
+    <h1 style="color:black;">Banks are to the economy what the heart is to the human body</h1>
+</section>
+
+
+    <!-- Modal send money -->
+    <div class="modal fade" id="sendMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                            <div class="input-group mb-3">
+                            <input type="text" id="enterSName" class="form-control" placeholder="Sender's username"
+                                aria-label="Sender's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">@yahoo.com</span>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" id="enterName" class="form-control" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">@yahoo.com</span>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Rs</span>
+                            </div>
+                            <input type="text" id="enterAmount" class="form-control" placeholder=" Enter Amount"
+                                aria-label="Amount">
+                            <div class="input-group-append">
+                                <span class="input-group-text">.00</span>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="sendMoney()" class="btn btn-success" data-dismiss="modal">Send
+                        Money</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- table  -->
+    <div class="container bg-light text-dark">
+        <div class="table-responsive">
+            <table class="table_1 table-bordered" style="width: 100%;height: 90%;">
+                <thead>
+                    <tr class="table-danger_1  table-responsive bg-dark text-white">
+                        <th scope="col">SR. No.</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">E-mail ID</th>
+                        <th scope="col">Bank Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-light_1">
+                        <td scope="row">1</td>
+                        <td>Pradip</td>
+                        <td>pradippm@yahoo.com</td>
+                        <td>
+                            <p id="PradipBankBalance">500500</p>
+                        </td>
+                    </tr>
+                    <tr class="table-info_1"  >
+                        <td scope="row">2</td>
+                        <td>Sanket</td>
+                        <td>sanket19@yahoo.com</td>
+                        <td>
+                            <p id="SanketBankBalance">745670</p>
+                        </td>
+                    </tr>
+                    <tr class="table-light_1">
+                        <td scope="row">3</td>
+                        <td>Amay</td>
+                        <td>amay@yahoo.com</td>
+                        <td>
+                            <p id="AmayBankBalance">5667788</p>
+                        </td>
+                    </tr>
+                    <tr class="table-info_1">
+                        <td scope="row">4</td>
+                        <td>Aditya</td>
+                        <td>adityanv123@yahoo.com</td>
+                        <td>
+                            <p id="AdityaBankBalance">324200</p>
+                        </td>
+                    </tr>
+                    <tr class="table-light_1">
+                        <td scope="row">5</td>
+                        <td>Amisha</td>
+                        <td>amisha35@yahoo.com</td>
+                        <td>
+                            <p id="AmishaBankBalance">6543490</p>
+                        </td>
+                    </tr>
+                    <tr class="table-info_1">
+                        <td scope="row">6</td>
+                        <td>Nishar</td>
+                        <td>nishar2345@yahoo.com</td>
+                        <td>
+                            <p id="nisharBankBalance">8766540</p>
+                        </td>
+                    </tr>
+                    <tr class="table-light_1">
+                        <td>7</td>
+                        <td>Akshay</td>
+                        <td>akshay78@yahoo.com</td>
+                        <td>
+                            <p id="akshayBankBalance">875456</p>
+                        </td>
+                    </tr>
+                    <tr class="table-info_1">
+                        <td scope="row">8</td>
+                        <td>Sundar</td>
+                        <td>sundar@yahoo.com</td>
+                        <td>
+                            <p id="sundarBankBalance">573571</p>
+                        </td>
+                    </tr>
+                    <tr class="table-light_1">
+                        <td>9</td>
+                        <td>ramcharan</td>
+                        <td>rmcharan8@yahoo.com</td>
+                        <td>
+                            <p id="rmcharan8BankBalance">87955456</p>
+                        </td>
+                    </tr>
+                    <tr class="table-info_1">
+                        <td scope="row">10</td>
+                        <td>AlluArjun</td>
+                        <td>AA91@yahoo.com</td>
+                        <td>
+                            <p id="AA91BankBalance">51763571</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+    </div>
+    </section>
+
+
+
+
+<footer style="margin-bottom: 0px; padding-bottom: 0px;"  class="container-fluid bg-dark my-0 py-3 text-light">
+  <p class="mb-0 text-center">&copy; 2021-2022 Sparskbanks.com</p>
+  <p class="mb-0 text-center">
+    <a href="#home">Back to top |</a>
+    <a href="#">Privacy |</a>
+    <a href="#">Terms</a>
+  </p>
+</footer>
+
+
+
+    <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+    
+</body>
+</html>
